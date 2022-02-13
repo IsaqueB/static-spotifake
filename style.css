@@ -20,6 +20,11 @@ p, h1, h2, h3, h4{
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--light-color)
+}
+
 .background{
     display: flex;
     flex-direction: column;
@@ -35,6 +40,7 @@ p, h1, h2, h3, h4{
 
 .page{
     display: flex;
+    max-height: 90vh;
 }
 
 .navbar{
@@ -183,8 +189,9 @@ p, h1, h2, h3, h4{
 }
 
 .content{
-    max-height: 83vh;
+    height: 83vh;
     padding-top: 7vh;
+    padding-bottom: 3vh;
     overflow-y: scroll;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 60%,rgba(0, 0, 0, 0.1));
     background-color: var(--main-color);
@@ -218,7 +225,7 @@ p, h1, h2, h3, h4{
 
 .playlist_sequence{
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     margin: 0px 1rem;
     height: max-content;
     min-width: 85.75vw;
