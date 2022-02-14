@@ -21,6 +21,7 @@ p, h1, h2, h3, h4{
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     color: var(--light-color)
 }
@@ -40,7 +41,7 @@ a {
 
 .page{
     display: flex;
-    max-height: 90vh;
+    max-height: 91.5vh;
 }
 
 .navbar{
@@ -55,9 +56,17 @@ a {
 
 .logo{
     align-self: flex-start;
-    margin-left: 10%;
-    margin-top: 10%;
+    /* margin-left: 10%;
+    margin-top: 10%; */
+    margin: 0% 10%;
+    margin-top: 5%;
     height: 5rem;
+    fill: var(--light-color);
+}
+
+.logo svg{
+    height: 5rem;
+    fill: var(--light-color);
 }
 
 .logo path{
@@ -82,7 +91,7 @@ a {
 
 .options li:hover{
     cursor: pointer;
-    filter: brightness(1);
+    filter: brightness(1.2);
 }
 
 .options li svg{
@@ -117,7 +126,6 @@ a {
 }
 
 .legal li:hover{
-    cursor: pointer;
     text-decoration: underline;
 }
 
@@ -127,11 +135,10 @@ a {
     padding: 0;
     margin: 0;
     width: 100%;
-    background-color: sienna;
 }
 
 .mc-header{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -156,6 +163,12 @@ a {
     max-height: 32px;
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    transition-duration: 0.3s;
+}
+
+.arrow-circle:hover{
+    background-color: var(--light-color);
+    fill: var(--dark-color);
 }
 
 .arrow-circle svg{
@@ -176,6 +189,7 @@ a {
 }
 
 .auth button{
+    cursor: pointer;
     padding: 0.6rem 2.5rem;
     background-color: var(--light-color);
     border: none;
@@ -242,13 +256,11 @@ a {
 }
 
 .playlist:hover{
-    cursor: pointer;
     background-color: rgb(233, 93, 93);
 }
 
 .playlist:hover .playlist_play{
     transform: translateY(-4px);
-    transition-duration: 0.5s;
     opacity: 1;
 }
 
@@ -295,6 +307,7 @@ a {
     right: 8px;
     border-radius: 100%;
     background-color: #1db954;
+    transition-duration: 0.5s;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
 }
 
@@ -304,7 +317,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 10vh;
+    min-height: 8.5vh;
     background-image: linear-gradient(90deg,#F5E3E0,#E9C0B9);
     color: var(--dark-color);
 }
