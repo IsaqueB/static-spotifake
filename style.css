@@ -116,6 +116,9 @@ a {
 }
 
 .legal{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     margin-top: auto;
     padding: 10% 0%;
     width: 100%;
