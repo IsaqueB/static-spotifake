@@ -24,12 +24,17 @@ ul {
     list-style-type: none
 }
 
+input:focus{
+    outline: none;
+}
+
 .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    height: 9vh;
+    width: 100%;
+    height: 8vh;
+    min-height: 80px;
     background-color: var(--dark-color);
 }
 
@@ -60,20 +65,24 @@ ul {
 .BRBContainer{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    background-image: url("../assets/doritasso.svg");
     background-color: var(--secondary-color);
-    height: 20vw;
-    gap: 0rem;
+    height: 47vh;
+    gap: 2rem;
+    min-height: 240px;
+    padding: 1rem 0rem;
 }
 
 .BRBContainer h1{
     /* font-weight: normal; */
     margin: 0;
-    color: var(--light-color)
+    font-size: 3rem;
+    color: var(--light-color);
 }
 
-.BRBContainer b{
+#pun{
     color: var(--main-color);
 }
 
@@ -91,12 +100,16 @@ ul {
     text-align: center;
 }
 
+.BRBContainer ul li small{
+    margin-bottom: 1rem;
+}
+
 .searchbar{
     display: flex;
     background-color: white;
     width: 35%;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 4px;
 }
 
 .searchbar input{
@@ -106,4 +119,36 @@ ul {
     height: 0.5rem 1.5rem;
     width: 100%;
     border: none;
+}
+
+.LContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--dark-color);
+    padding: 2rem 0rem;
+    /* background-color: var(--light-color); */
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.row ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.row li{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-direction: column;
+}
+
+.row a{
+    color: var(--main-color)
 }
