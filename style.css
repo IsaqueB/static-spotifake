@@ -248,6 +248,10 @@ a {
     scrollbar-width: none;
 }
 
+.playlist_sequence::-webkit-scrollbar{
+    display: none;
+}
+
 .playlist{
     width: 9.25rem;
     padding: 0.85rem;
