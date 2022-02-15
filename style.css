@@ -335,6 +335,7 @@ a {
 }
 
 .sign-up-footer button{
+    cursor: pointer;
     margin-right: 3rem;
     padding: 0.8rem 3.5rem;
     color: var(--light-color);
