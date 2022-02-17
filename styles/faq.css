@@ -1,0 +1,216 @@
+:root{
+    --main-color: #d45252;
+    --secondary-color: #4A306D;
+    --light-color: #EFD9CE;
+    --dark-color: #080708;
+    --dark-secondary-color: #25283D;
+}
+
+body{
+    margin: 0;
+    color: var(--light-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--light-color)
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none
+}
+
+input:focus{
+    outline: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    min-height: 80px;
+    background-color: var(--dark-color);
+}
+
+.logo{
+    margin: 0% 0%;
+    height: 5rem;   
+    width: auto;
+    fill: var(--light-color);
+}
+
+.logo svg{
+    max-height: 5rem;
+    /* width: 100%; */
+    fill: var(--light-color);
+}
+
+.logo path{
+    min-width: max-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navbar .options{
+    display: flex;
+    gap: 2rem;
+}
+
+.BRBContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/doritasso.svg");
+    background-color: var(--secondary-color);
+    height: 47vh;
+    gap: 2rem;
+    min-height: 240px;
+    padding: 1rem 0rem;
+}
+
+.BRBContainer h1{
+    /* font-weight: normal; */
+    margin: 0;
+    font-size: 3rem;
+    color: var(--light-color);
+}
+
+#pun{
+    color: var(--main-color);
+}
+
+.BRBContainer ul{
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+}
+
+.BRBContainer ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.BRBContainer ul li small{
+    margin-bottom: 1rem;
+}
+
+.searchbar{
+    display: flex;
+    background-color: white;
+    width: 35%;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.searchbar input{
+    margin-left: 1rem;
+    background: transparent;
+    font-size: 1rem;
+    height: 0.5rem 1.5rem;
+    width: 100%;
+    border: none;
+}
+
+.LContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--dark-color);
+    padding: 2rem 0rem;
+    /* background-color: var(--light-color); */
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.row ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.row li{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-direction: column;
+}
+
+.row a{
+    color: var(--main-color)
+}
+
+.community{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 3rem 0rem;
+    gap: 2rem;
+}
+
+.community h1{
+    margin: 0;
+}
+
+.community button{
+    cursor: pointer;
+    margin-right: 3rem;
+    padding: 0.8rem 3.5rem;
+    color: var(--light-color);
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 20rem;
+    font-family: 'Poppins', sans-serif;
+    transition-duration: 0.3s;
+}
+
+.footer{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    padding: 4rem 15%;
+    background-color: var(--dark-color);
+}
+
+.footer h4{
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer ul{
+    display: flex;
+    gap: 3rem;
+}
+
+.logo #footer{
+    height: 4rem;   
+    width: auto;
+}   
+
+.socialMedia{
+    fill: var(--light-color);
+}
+
+.socialMedia svg{
+    padding: 0.75rem;
+    border-radius: 100%;
+    background-color: var(--dark-secondary-color);
+}
