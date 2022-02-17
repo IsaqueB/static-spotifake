@@ -1,692 +1,140 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="/styles/index.css">
+    <header>
+        <link rel="stylesheet" type="text/css" href="./index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
-    </head>
+    </header>
     <body>
         <div class="background">
-            <div class="page">
-                <div class="navbar">
-                    <!-- <svg class="logo" viewBox="0 0 1134 340">
-                        <path d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z"/>
-                    </svg> -->
-                    <!-- <img class="logo" src="assets/camaraodj.svg"/> -->
-                    <a class="logo" href="https://open.spotify.com/">
-                        <svg viewBox="0 0 949 405" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M198.565 376.155C179.723 381.116 163.634 361.868 171.858 344.205L195.691 293.019C202.803 277.745 223.383 275.049 234.189 287.977L264.957 324.786C275.763 337.714 269.46 357.489 253.166 361.779L198.565 376.155Z" fill="#FFA0A0"/>
-                            <path d="M245.19 342.53C228.995 353.363 207.51 340.413 209.526 321.033L217.705 242.409C219.448 225.65 238.025 216.392 252.455 225.09L309.98 259.764C324.411 268.462 324.899 289.212 310.895 298.58L245.19 342.53Z" fill="#FF8D8D"/>
-                            <path d="M305.875 279.764C303.274 299.073 279.344 306.604 266.154 292.264L195.093 215.012C183.686 202.612 189.045 182.56 205.116 177.502L290.191 150.729C306.262 145.671 322.139 159.041 319.889 175.739L305.875 279.764Z" fill="#F37676"/>
-                            <path d="M304.321 160.476C315.861 176.174 303.876 198.213 284.426 197.058L149.095 189.022C132.276 188.024 122.204 169.876 130.253 155.074L185.288 53.8786C193.337 39.077 214.045 37.6688 224.025 51.2443L304.321 160.476Z" fill="#EC6262"/>
-                            <path d="M106.5 81.5002C106.5 74.1462 107.948 66.8642 110.763 60.07C113.577 53.2757 117.702 47.1023 122.902 41.9022C128.102 36.7022 134.276 32.5772 141.07 29.763C147.864 26.9487 155.146 25.5002 162.5 25.5002C169.854 25.5003 177.136 26.9487 183.93 29.763C190.725 32.5773 196.898 36.7022 202.098 41.9023C207.298 47.1024 211.423 53.2758 214.237 60.07C217.052 66.8643 218.5 74.1463 218.5 81.5003L204.199 81.5003C204.199 76.0243 203.121 70.6018 201.025 65.5426C198.93 60.4834 195.858 55.8865 191.986 52.0143C188.114 48.1422 183.517 45.0706 178.458 42.975C173.399 40.8794 167.976 39.8008 162.5 39.8008C157.024 39.8008 151.602 40.8794 146.542 42.975C141.483 45.0705 136.886 48.1421 133.014 52.0143C129.142 55.8864 126.07 60.4833 123.975 65.5425C121.879 70.6018 120.801 76.0242 120.801 81.5002H106.5Z" fill="#25283D"/>
-                            <path d="M93.5 116.5C93.5 125.889 101.111 133.5 110.5 133.5L121.5 133.5C124.261 133.5 126.5 131.262 126.5 128.5L126.5 84.5002C126.5 81.7388 124.261 79.5002 121.5 79.5002L110.5 79.5002C101.111 79.5002 93.5 87.1114 93.5 96.5002L93.5 116.5Z" fill="#25283D"/>
-                            <path d="M41.6211 195.348C22.4417 191.917 15.9488 167.685 30.8434 155.125L151.622 53.2716C164.502 42.4096 184.305 48.6265 188.666 64.9013L223.411 194.572C227.772 210.847 213.731 226.132 197.145 223.166L41.6211 195.348Z" fill="#D55252"/>
-                            <path d="M167.5 120.5C167.5 129.337 160.337 136.5 151.5 136.5C142.663 136.5 135.5 129.337 135.5 120.5C135.5 111.664 142.663 104.5 151.5 104.5C160.337 104.5 167.5 111.664 167.5 120.5Z" fill="#EFD9CE"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M115.988 1.16824C116.172 1.97611 115.665 2.7797 114.858 2.9631C99.5568 6.43679 75.6988 14.315 53.9521 26.6306C32.1562 38.974 12.7737 55.6089 5.95103 76.4667C-0.872775 97.328 4.71977 116.009 16.7627 128.836C28.8355 141.695 47.4226 148.697 66.6052 146.015C67.4257 145.9 68.1838 146.472 68.2985 147.293C68.4132 148.113 67.8411 148.871 67.0207 148.986C46.8699 151.804 27.3133 144.456 14.5756 130.89C1.80808 117.291 -4.0765 97.4726 3.09969 75.534C10.277 53.5918 30.4779 36.4767 52.4737 24.0201C74.5187 11.5357 98.6608 3.56387 114.193 0.0375506C115.001 -0.145857 115.805 0.360369 115.988 1.16824Z" fill="#D55252"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M171.988 1.16824C172.172 1.97611 171.665 2.7797 170.858 2.9631C155.557 6.43679 131.699 14.315 109.952 26.6306C88.1562 38.974 68.7737 55.6089 61.951 76.4667C55.1272 97.328 60.7198 116.009 72.7627 128.836C84.8355 141.695 103.423 148.697 122.605 146.015C123.426 145.9 124.184 146.472 124.299 147.293C124.413 148.113 123.841 148.871 123.021 148.986C102.87 151.804 83.3133 144.456 70.5756 130.89C57.8081 117.291 51.9235 97.4726 59.0997 75.534C66.277 53.5918 86.4779 36.4767 108.474 24.0201C130.519 11.5357 154.661 3.56387 170.193 0.0375506C171.001 -0.145857 171.805 0.360369 171.988 1.16824Z" fill="#D55252"/>
-                            <path d="M350.955 202.036C350.955 193.684 352.683 186.388 356.139 180.148C359.595 173.908 364.395 169.108 370.539 165.748C376.779 162.388 383.883 160.708 391.851 160.708C402.123 160.708 410.763 163.54 417.771 169.204C424.779 174.772 429.291 182.596 431.307 192.676H401.355C399.627 187.396 396.267 184.756 391.275 184.756C387.723 184.756 384.891 186.244 382.779 189.22C380.763 192.1 379.755 196.372 379.755 202.036C379.755 207.7 380.763 212.02 382.779 214.996C384.891 217.972 387.723 219.46 391.275 219.46C396.363 219.46 399.723 216.82 401.355 211.54H431.307C429.291 221.524 424.779 229.348 417.771 235.012C410.763 240.676 402.123 243.508 391.851 243.508C383.883 243.508 376.779 241.828 370.539 238.468C364.395 235.108 359.595 230.308 356.139 224.068C352.683 217.828 350.955 210.484 350.955 202.036Z"/>
-                            <path d="M424.024 202.036C424.024 193.684 425.512 186.388 428.488 180.148C431.56 173.908 435.688 169.108 440.872 165.748C446.152 162.388 452.008 160.708 458.44 160.708C464.008 160.708 468.808 161.812 472.84 164.02C476.872 166.228 479.992 169.204 482.2 172.948V161.716H510.424V242.5H482.2V231.268C479.992 235.012 476.824 237.988 472.696 240.196C468.664 242.404 463.912 243.508 458.44 243.508C452.008 243.508 446.152 241.828 440.872 238.468C435.688 235.108 431.56 230.308 428.488 224.068C425.512 217.732 424.024 210.388 424.024 202.036ZM482.2 202.036C482.2 196.852 480.76 192.772 477.88 189.796C475.096 186.82 471.64 185.332 467.512 185.332C463.288 185.332 459.784 186.82 457 189.796C454.216 192.676 452.824 196.756 452.824 202.036C452.824 207.22 454.216 211.348 457 214.42C459.784 217.396 463.288 218.884 467.512 218.884C471.64 218.884 475.096 217.396 477.88 214.42C480.76 211.444 482.2 207.316 482.2 202.036Z"/>
-                            <path d="M617.659 160.996C627.835 160.996 635.803 164.068 641.563 170.212C647.419 176.356 650.347 184.756 650.347 195.412V242.5H622.123V199.156C622.123 194.836 620.923 191.476 618.523 189.076C616.123 186.676 612.859 185.476 608.731 185.476C604.603 185.476 601.339 186.676 598.939 189.076C596.539 191.476 595.339 194.836 595.339 199.156V242.5H567.115V199.156C567.115 194.836 565.915 191.476 563.515 189.076C561.211 186.676 557.995 185.476 553.867 185.476C549.643 185.476 546.331 186.676 543.931 189.076C541.531 191.476 540.331 194.836 540.331 199.156V242.5H512.107V161.716H540.331V172.372C542.827 168.916 546.043 166.18 549.979 164.164C554.011 162.052 558.619 160.996 563.803 160.996C569.755 160.996 575.035 162.292 579.643 164.884C584.347 167.476 588.043 171.124 590.731 175.828C593.611 171.412 597.403 167.86 602.107 165.172C606.811 162.388 611.995 160.996 617.659 160.996Z"/>
-                            <path d="M646.802 202.036C646.802 193.684 648.29 186.388 651.266 180.148C654.338 173.908 658.466 169.108 663.65 165.748C668.93 162.388 674.786 160.708 681.218 160.708C686.786 160.708 691.586 161.812 695.618 164.02C699.65 166.228 702.77 169.204 704.978 172.948V161.716H733.202V242.5H704.978V231.268C702.77 235.012 699.602 237.988 695.474 240.196C691.442 242.404 686.69 243.508 681.218 243.508C674.786 243.508 668.93 241.828 663.65 238.468C658.466 235.108 654.338 230.308 651.266 224.068C648.29 217.732 646.802 210.388 646.802 202.036ZM704.978 202.036C704.978 196.852 703.538 192.772 700.658 189.796C697.874 186.82 694.418 185.332 690.29 185.332C686.066 185.332 682.562 186.82 679.778 189.796C676.994 192.676 675.602 196.756 675.602 202.036C675.602 207.22 676.994 211.348 679.778 214.42C682.562 217.396 686.066 218.884 690.29 218.884C694.418 218.884 697.874 217.396 700.658 214.42C703.538 211.444 704.978 207.316 704.978 202.036Z"/>
-                            <path d="M763.109 175.972C766.277 171.364 770.117 167.716 774.629 165.028C779.141 162.34 783.989 160.996 789.173 160.996V191.092H781.253C775.109 191.092 770.549 192.292 767.573 194.692C764.597 197.092 763.109 201.268 763.109 207.22V242.5H734.885V161.716H763.109V175.972Z"/>
-                            <path d="M780.283 202.036C780.283 193.684 781.771 186.388 784.747 180.148C787.819 173.908 791.947 169.108 797.131 165.748C802.411 162.388 808.267 160.708 814.699 160.708C820.267 160.708 825.067 161.812 829.099 164.02C833.131 166.228 836.251 169.204 838.459 172.948V161.716H866.683V242.5H838.459V231.268C836.251 235.012 833.083 237.988 828.955 240.196C824.923 242.404 820.171 243.508 814.699 243.508C808.267 243.508 802.411 241.828 797.131 238.468C791.947 235.108 787.819 230.308 784.747 224.068C781.771 217.732 780.283 210.388 780.283 202.036ZM838.459 202.036C838.459 196.852 837.019 192.772 834.139 189.796C831.355 186.82 827.899 185.332 823.771 185.332C819.547 185.332 816.043 186.82 813.259 189.796C810.475 192.676 809.083 196.756 809.083 202.036C809.083 207.22 810.475 211.348 813.259 214.42C816.043 217.396 819.547 218.884 823.771 218.884C827.899 218.884 831.355 217.396 834.139 214.42C837.019 211.444 838.459 207.316 838.459 202.036ZM795.115 155.668C797.803 140.02 805.003 132.196 816.715 132.196C818.923 132.196 820.891 132.532 822.619 133.204C824.443 133.876 826.507 134.836 828.811 136.084C830.443 136.948 831.835 137.62 832.987 138.1C834.139 138.58 835.291 138.82 836.443 138.82C839.995 138.82 842.107 136.612 842.779 132.196H857.035C855.691 140.356 853.147 146.308 849.403 150.052C845.755 153.7 841.099 155.524 835.435 155.524C833.323 155.524 831.403 155.236 829.675 154.66C827.947 153.988 825.835 153.028 823.339 151.78C821.707 150.916 820.315 150.244 819.163 149.764C818.011 149.284 816.859 149.044 815.707 149.044C812.251 149.044 810.091 151.252 809.227 155.668H795.115Z"/>
-                            <path d="M905.95 243.508C897.886 243.508 890.638 241.828 884.206 238.468C877.87 235.108 872.878 230.308 869.23 224.068C865.582 217.828 863.758 210.484 863.758 202.036C863.758 193.684 865.582 186.388 869.23 180.148C872.974 173.908 878.014 169.108 884.35 165.748C890.782 162.388 898.03 160.708 906.094 160.708C914.158 160.708 921.358 162.388 927.694 165.748C934.126 169.108 939.166 173.908 942.814 180.148C946.558 186.388 948.43 193.684 948.43 202.036C948.43 210.388 946.558 217.732 942.814 224.068C939.166 230.308 934.126 235.108 927.694 238.468C921.262 241.828 914.014 243.508 905.95 243.508ZM905.95 219.028C909.886 219.028 913.15 217.588 915.742 214.708C918.43 211.732 919.774 207.508 919.774 202.036C919.774 196.564 918.43 192.388 915.742 189.508C913.15 186.628 909.934 185.188 906.094 185.188C902.254 185.188 899.038 186.628 896.446 189.508C893.854 192.388 892.558 196.564 892.558 202.036C892.558 207.604 893.806 211.828 896.302 214.708C898.798 217.588 902.014 219.028 905.95 219.028Z"/>
-                            <path d="M232.5 116.5C232.5 125.889 224.889 133.5 215.5 133.5L204.5 133.5C201.739 133.5 199.5 131.262 199.5 128.5L199.5 84.5002C199.5 81.7388 201.739 79.5002 204.5 79.5002L215.5 79.5002C224.889 79.5002 232.5 87.1114 232.5 96.5002L232.5 116.5Z"/>
-                            <path d="M931.5 202.5C931.5 216.307 920.307 227.5 906.5 227.5C892.693 227.5 881.5 216.307 881.5 202.5C881.5 188.693 892.693 177.5 906.5 177.5C920.307 177.5 931.5 188.693 931.5 202.5Z"/>
-                            <path d="M881.5 202.099C881.5 198.992 882.056 196.279 883.169 193.958C884.318 191.638 885.879 189.852 887.853 188.603C889.827 187.353 892.016 186.728 894.421 186.728C896.359 186.728 898.082 187.139 899.59 187.96C901.133 188.746 902.335 189.835 903.197 191.227V177.517H913.803V217.148H903.197V212.97C902.371 214.363 901.205 215.469 899.697 216.291C898.19 217.112 896.413 217.522 894.367 217.522C891.963 217.522 889.773 216.898 887.799 215.648C885.861 214.398 884.318 212.613 883.169 210.292C882.056 207.936 881.5 205.205 881.5 202.099ZM903.251 202.099C903.251 200.171 902.712 198.653 901.636 197.546C900.595 196.44 899.303 195.886 897.759 195.886C896.18 195.886 894.87 196.44 893.829 197.546C892.788 198.618 892.268 200.135 892.268 202.099C892.268 204.027 892.788 205.562 893.829 206.704C894.87 207.811 896.18 208.365 897.759 208.365C899.303 208.365 900.595 207.811 901.636 206.704C902.712 205.598 903.251 204.062 903.251 202.099Z" fill="#d45252"/>
-                            <path d="M918.362 184.318C916.496 184.318 914.989 183.818 913.84 182.819C912.727 181.783 912.171 180.498 912.171 178.963C912.171 177.392 912.727 176.089 913.84 175.053C914.989 174.018 916.496 173.5 918.362 173.5C920.193 173.5 921.665 174.018 922.777 175.053C923.926 176.089 924.5 177.392 924.5 178.963C924.5 180.498 923.926 181.783 922.777 182.819C921.665 183.818 920.193 184.318 918.362 184.318ZM923.639 220.093C923.639 227.698 919.798 231.5 912.117 231.5H908.295V222.557H910.556C911.453 222.557 912.099 222.378 912.494 222.021C912.889 221.664 913.086 221.075 913.086 220.254V187.103H923.639V220.093Z" fill="#d45252"/>
-                        </svg>
-                    </a>
-                    <ul class="options">
-                        <li>
-                            <svg height="24" width="24" viewBox="0 0 24 24">
-                                <path d="M21 22V7.174l-9.001-5.195L3 7.214V22h7v-7h4v7z"/>
-                            </svg>
-                            Home
-                        </li>
-                        <li>
-                            <svg height="24" width="24" viewBox="0 0 24 24">
-                                <path d="M16.387 16.623A8.47 8.47 0 0019 10.5a8.5 8.5 0 10-8.5 8.5 8.454 8.454 0 005.125-1.73l4.401 5.153.76-.649-4.399-5.151zM10.5 18C6.364 18 3 14.636 3 10.5S6.364 3 10.5 3 18 6.364 18 10.5 14.636 18 10.5 18z"/>
-                            </svg>
-                            Search
-                        </li>
-                        <li>
-                            <svg height="24" width="24" viewBox="0 0 24 24">
-                                <path d="M13.66 4.097l-.913.406 7.797 17.513.914-.406L13.66 4.097zM3 22h1V4H3v18zm6 0h1V4H9v18z"/>
-                            </svg>
-                            Your Library
-                        </li>
-                    </ul>
-                    <ul class="options">
-                        <li>
-                            <svg class="rounded_bg create_playlist" role="img" height="24" width="24" viewBox="-4 -4 24 24">
-                                <path d="M14 7H9V2H7v5H2v2h5v5h2V9h5z"/>
-                            </svg>
-                            Create
-                        </li>
-                        <li>
-                            <svg class="rounded_bg liked_songs" height="24" width="24" viewBox="-4 -4 24 24">
-                                <path d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z"/>
-                            </svg>
-                            Liked Songs
-                        </li>
-                    </ul>
-                    <ul class="legal">
-                        <li>
-                            <a href="https://www.spotify.com/br/legal/cookies-policy/">
-                                Cookies
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.spotify.com/br/legal/privacy-policy/">
-                                Privacy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/faq">
-                                FAQ
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="main-container">
-                    <div class="mc-header">
-                        <div class="navigation-buttons">
-                            <div class="arrow-circle">
-                                <svg height="24" width="24" viewBox="0 0 24 24">
-                                    <path d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z" />
-                                </svg>
-                            </div>
-                            <div class="arrow-circle">
-                                <svg height="24" width="24" viewBox="0 0 24 24">
-                                    <path d="M8.043 2.793a1 1 0 000 1.414L15.836 12l-7.793 7.793a1 1 0 101.414 1.414L18.664 12 9.457 2.793a1 1 0 00-1.414 0z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="auth">
-                            <b><a href="https://www.spotify.com/br/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F">
-                                    SIGN UP
-                            </a></b>
-                            <a href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F">
-                                <button>
-                                    <b>LOG IN</b>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <ul>
-                            <li>
-                                <div class="playlist_row">
-                                    <div class="playlist_header">
-                                        <b>Template - DICA: Coloque o mouse em cima de uma linha e use Shift + Scroll-Do-Mouse para poder navegar pelas opções</b>
-                                        <p>see all</p>
-                                    </div>
-                                    <div class="playlist_sequence">
-                                        <a href="https://open.spotify.com/playlist/37i9dQZF1E8AbLEwogS4xM" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.pinimg.com/originals/a4/f8/4f/a4f84f26ec10f15d2ccd8ad37c4154ca.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>EXPLOOOOOOOOOSION</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="playlist_row">
-                                    <div class="playlist_header">
-                                        <b>Dia-a-dia</b>
-                                        <p>see all</p>
-                                    </div>
-                                    <div class="playlist_sequence">
-                                        <a href="https://open.spotify.com/track/0tD1sypxaMDpTd6qH1labJ?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://zerorqm.files.wordpress.com/2017/09/fool.png?w=1920&h=1080"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Glória Pires</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/6PI9MKx35DG9NTqGeRvoKr?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://data.whicdn.com/images/350761459/original.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Dio</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/5nos6f32wzHtS0id1TwOew?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.pinimg.com/736x/48/ab/9f/48ab9f33c54f3a95a08266c7557f501f.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>...</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/6AAURjeIX1qMn36jFLbCru?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://bot.to/wp-content/uploads/2020/09/kaori-miyazono_5f6fa44fa76ed.png"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Fritz Kreisler</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/20yk5pYXW2csECt4GFpGzX?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.pinimg.com/originals/e3/b2/33/e3b23308135dc45292706bc786958708.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>placeholder</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="http://pm1.narvii.com/6510/acb9c132ae877ed58d8699092f7da746da2789c1_00.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>placeholder</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/5zbutV48aKhYIUOdAuGAuX?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://gartic.com.br/imgs/mural/hi/himozinn/senku-ishigami.png"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Conku</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/1XrSjpNe49IiygZfzb74pk?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://64.media.tumblr.com/a8de919cf3e4b2a7957081d663493cb0/8bc405b289983dc7-86/s400x600/f8b32da4849c9b49adc413a491e3670bfc3c5f08.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Cole Sear</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="playlist_row">
-                                    <div class="playlist_header">
-                                        <b>No pain no gain</b>
-                                        <p>see all</p>
-                                    </div>
-                                    <div class="playlist_sequence">
-                                        <a href="https://open.spotify.com/track/6wpDQGn3Gl0j9Wt6D6mYvQ?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://static.wixstatic.com/media/1f8f2a_45225f9ff3774cc09bbd644861b8a892~mv2.png/v1/fit/w_720%2Ch_480%2Cal_c/file.png"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Johnny Cash</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/1eDBpkZgY7p9OBVodcrX9n?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.pinimg.com/originals/ab/80/45/ab8045ea2f65ee32415f56c8970527b8.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Robocop</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>                                        
-                                        <a href="https://open.spotify.com/track/0zMzyHAeMvwq5CRstru1Fp?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.pinimg.com/736x/a6/61/9a/a6619a4dcc0824908ce30d292e4fdb14.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Ronin</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/6nh6evb5VLgofLfsDQZe6X?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="http://pm1.narvii.com/7238/7c80af17614e45676822b930f45599ba6f8e6e93r1-732-724v2_00.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>American boy</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/7aNAGMMvTPB3PL4ffPZ59S?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://nerdhits.com.br/wp-content/uploads/2020/11/Villains-Zeke.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Chico</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/6YXOsfhu4fDWcHV14tcF3x?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://cdn.discordapp.com/attachments/580125063186087966/942552275413516378/latest.png"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Freddie Mercury</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/2fDHuS1PTkHBbCWWZF1ph9?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://64.media.tumblr.com/2959471a2f33301a3526818a833daa53/2730d99ae8e113cf-e8/s540x810/0d927697e7894697d7bad8090ebca48349e4bc7d.png"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Billie Eilish</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/5iSTcWV0014Vp2YrZOrfWl?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.pinimg.com/474x/a1/c0/76/a1c07655de0b882f6cc413f014c3eb09.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Palhaço</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/6Sq25M0UA2iX5CUgntaEY2?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://cdn.discordapp.com/attachments/580125063186087966/942974509198217246/latest.png"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Normal citizen</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/1UsAjRCSavihMYsspqJz4e?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/one-punch-man-king.png"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>#2</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/1IDozgb2HiuB31FXbUsvJJ?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="http://pm1.narvii.com/7656/c5ae5e3265548a0148eec7ef38a8afe767f80161r1-230-360v2_00.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Alice</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/7nTXGj1sSWkr3nmbC6VwOp?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://otakukart.com/wp-content/uploads/2022/02/Asta-Black-Clover-relationship.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Otávio</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="playlist_row">
-                                    <div class="playlist_header">
-                                        <b>From another world</b>
-                                        <p>see all</p>
-                                    </div>
-                                    <div class="playlist_sequence">
-                                        <a href="https://open.spotify.com/track/6Q4foUefrAyCt8VxJFML56?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.pinimg.com/originals/a4/f8/4f/a4f84f26ec10f15d2ccd8ad37c4154ca.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>EXPLOOOOOOOOOSION</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>       
-                                        <a href="https://open.spotify.com/track/73SpzrcaHk0RQPFP73vqVR?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://assets.change.org/photos/4/es/xh/GgesxhAISQTJOmU-800x450-noPad.jpg?1603157969"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Sultan Rebaixado</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>       
-                                        <a href="https://open.spotify.com/track/0fBSs3fRoh1yJcne77fdu9?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.pinimg.com/originals/a2/3c/3f/a23c3f5c2a7539635248d5c68411ff02.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>_</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>    
-                                        <a href="https://open.spotify.com/track/3W94WW41WRilqgs0CEOx9h?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.imgflip.com/3vi7xm.png"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Useless</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>    
-                                        <a href="https://open.spotify.com/track/6wky1KFF0YvgtrFaH4ep9r?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://honeysanime.com/wp-content/uploads/2018/11/Tensei-shitara-Slime-Datta-Ken-Wallpaper-1-500x281.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>I’m not a bad slime!</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>       
-                                        <a href="https://open.spotify.com/track/640fpRPqZzoQ5W6Cp0kdVY?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://m.media-amazon.com/images/M/MV5BZTNkNTg2NmQtYWZmMS00ODU1LWJkNTctN2FjMmI0MzQ4NTk1XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Crown</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/7BwScOUaIcnABifoNlK9e9?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.pinimg.com/originals/a0/49/9f/a0499fbe4d6f991549f7b9d3bac942b9.png"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Momonga</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>             
-                                        <a href="https://open.spotify.com/track/5eYkFRuIHGaZZXUnBbsF0D?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://i.pinimg.com/originals/5c/da/6a/5cda6a966e642da5f56e156f7e40374f.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Soldier</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a> 
-                                        <a href="https://open.spotify.com/track/3S43ahDXqxZgNI3OQ2fZFb?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://cdn.myanimelist.net/images/characters/15/384675.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>B*tch</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>   
-                                        <a href="https://open.spotify.com/track/75zMKn5euxQdlkZgu4P42J?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://external-preview.redd.it/GfIc1TM6eDRaJ98PKo1Df3290_twtBDqU2b_RyA7fS8.jpg?auto=webp&s=5851a30a19c92ececc9cd9e0ae2a217fffb78204"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>I'm loving it</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="playlist_row">
-                                    <div class="playlist_header">
-                                        <b>White noise</b>
-                                        <p>see all</p>
-                                    </div>
-                                    <div class="playlist_sequence">
-                                        <a href="https://open.spotify.com/track/1H5tvpoApNDxvxDexoaAUo?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://data.whicdn.com/images/355016912/original.jpg"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Yubi yubi</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/5ygDXis42ncn6kYG14lEVG?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://cdn.discordapp.com/attachments/580125063186087966/942296263045554256/unknown.png"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>A</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/05XjdCxpuenVA0vKR69w3S?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://external-preview.redd.it/xRhcUTMYBFH62YAlqY9_tOnf2zukkWeT8Ti61X8Vf6o.jpg?width=640&crop=smart&auto=webp&s=ced845ff2e155c050134acace896c82b3dae5e3d"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Duck noises</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/1qD6F4egXG4T8niy2nBi8U?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx9yH_0dPirAOtMXtI4I2coXX6MI2ivzVpZkiRtVFyrrWFibuNfy08gqLFq2o1APXU4rQ&usqp=CAU"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Haaachamachama</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                        <a href="https://open.spotify.com/track/1iG7AjSI029yaDxWuZTAFJ?autoplay=true" target="_blank">
-                                            <div class="playlist">
-                                                <div style="position: relative">
-                                                    <img src="https://smallcelebrity.com/wp-content/uploads/2021/12/ironmouse.webp"/>
-                                                    <div class="playlist_play">
-                                                        <svg height="24" role="img" width="24" viewBox="0 0 24 24" aria-hidden="true">
-                                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <h4>Minnie</h4>
-                                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit pretium nibh eget imperdiet. </small>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="navbar">
+                <a class="logo" href="../">
+                    <svg viewBox="0 0 949 405" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M198.565 376.155C179.723 381.116 163.634 361.868 171.858 344.205L195.691 293.019C202.803 277.745 223.383 275.049 234.189 287.977L264.957 324.786C275.763 337.714 269.46 357.489 253.166 361.779L198.565 376.155Z" fill="#FFA0A0"/>
+                        <path d="M245.19 342.53C228.995 353.363 207.51 340.413 209.526 321.033L217.705 242.409C219.448 225.65 238.025 216.392 252.455 225.09L309.98 259.764C324.411 268.462 324.899 289.212 310.895 298.58L245.19 342.53Z" fill="#FF8D8D"/>
+                        <path d="M305.875 279.764C303.274 299.073 279.344 306.604 266.154 292.264L195.093 215.012C183.686 202.612 189.045 182.56 205.116 177.502L290.191 150.729C306.262 145.671 322.139 159.041 319.889 175.739L305.875 279.764Z" fill="#F37676"/>
+                        <path d="M304.321 160.476C315.861 176.174 303.876 198.213 284.426 197.058L149.095 189.022C132.276 188.024 122.204 169.876 130.253 155.074L185.288 53.8786C193.337 39.077 214.045 37.6688 224.025 51.2443L304.321 160.476Z" fill="#EC6262"/>
+                        <path d="M106.5 81.5002C106.5 74.1462 107.948 66.8642 110.763 60.07C113.577 53.2757 117.702 47.1023 122.902 41.9022C128.102 36.7022 134.276 32.5772 141.07 29.763C147.864 26.9487 155.146 25.5002 162.5 25.5002C169.854 25.5003 177.136 26.9487 183.93 29.763C190.725 32.5773 196.898 36.7022 202.098 41.9023C207.298 47.1024 211.423 53.2758 214.237 60.07C217.052 66.8643 218.5 74.1463 218.5 81.5003L204.199 81.5003C204.199 76.0243 203.121 70.6018 201.025 65.5426C198.93 60.4834 195.858 55.8865 191.986 52.0143C188.114 48.1422 183.517 45.0706 178.458 42.975C173.399 40.8794 167.976 39.8008 162.5 39.8008C157.024 39.8008 151.602 40.8794 146.542 42.975C141.483 45.0705 136.886 48.1421 133.014 52.0143C129.142 55.8864 126.07 60.4833 123.975 65.5425C121.879 70.6018 120.801 76.0242 120.801 81.5002H106.5Z" fill="#25283D"/>
+                        <path d="M93.5 116.5C93.5 125.889 101.111 133.5 110.5 133.5L121.5 133.5C124.261 133.5 126.5 131.262 126.5 128.5L126.5 84.5002C126.5 81.7388 124.261 79.5002 121.5 79.5002L110.5 79.5002C101.111 79.5002 93.5 87.1114 93.5 96.5002L93.5 116.5Z" fill="#25283D"/>
+                        <path d="M41.6211 195.348C22.4417 191.917 15.9488 167.685 30.8434 155.125L151.622 53.2716C164.502 42.4096 184.305 48.6265 188.666 64.9013L223.411 194.572C227.772 210.847 213.731 226.132 197.145 223.166L41.6211 195.348Z" fill="#D55252"/>
+                        <path d="M167.5 120.5C167.5 129.337 160.337 136.5 151.5 136.5C142.663 136.5 135.5 129.337 135.5 120.5C135.5 111.664 142.663 104.5 151.5 104.5C160.337 104.5 167.5 111.664 167.5 120.5Z" fill="#EFD9CE"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M115.988 1.16824C116.172 1.97611 115.665 2.7797 114.858 2.9631C99.5568 6.43679 75.6988 14.315 53.9521 26.6306C32.1562 38.974 12.7737 55.6089 5.95103 76.4667C-0.872775 97.328 4.71977 116.009 16.7627 128.836C28.8355 141.695 47.4226 148.697 66.6052 146.015C67.4257 145.9 68.1838 146.472 68.2985 147.293C68.4132 148.113 67.8411 148.871 67.0207 148.986C46.8699 151.804 27.3133 144.456 14.5756 130.89C1.80808 117.291 -4.0765 97.4726 3.09969 75.534C10.277 53.5918 30.4779 36.4767 52.4737 24.0201C74.5187 11.5357 98.6608 3.56387 114.193 0.0375506C115.001 -0.145857 115.805 0.360369 115.988 1.16824Z" fill="#D55252"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M171.988 1.16824C172.172 1.97611 171.665 2.7797 170.858 2.9631C155.557 6.43679 131.699 14.315 109.952 26.6306C88.1562 38.974 68.7737 55.6089 61.951 76.4667C55.1272 97.328 60.7198 116.009 72.7627 128.836C84.8355 141.695 103.423 148.697 122.605 146.015C123.426 145.9 124.184 146.472 124.299 147.293C124.413 148.113 123.841 148.871 123.021 148.986C102.87 151.804 83.3133 144.456 70.5756 130.89C57.8081 117.291 51.9235 97.4726 59.0997 75.534C66.277 53.5918 86.4779 36.4767 108.474 24.0201C130.519 11.5357 154.661 3.56387 170.193 0.0375506C171.001 -0.145857 171.805 0.360369 171.988 1.16824Z" fill="#D55252"/>
+                        <path d="M350.955 202.036C350.955 193.684 352.683 186.388 356.139 180.148C359.595 173.908 364.395 169.108 370.539 165.748C376.779 162.388 383.883 160.708 391.851 160.708C402.123 160.708 410.763 163.54 417.771 169.204C424.779 174.772 429.291 182.596 431.307 192.676H401.355C399.627 187.396 396.267 184.756 391.275 184.756C387.723 184.756 384.891 186.244 382.779 189.22C380.763 192.1 379.755 196.372 379.755 202.036C379.755 207.7 380.763 212.02 382.779 214.996C384.891 217.972 387.723 219.46 391.275 219.46C396.363 219.46 399.723 216.82 401.355 211.54H431.307C429.291 221.524 424.779 229.348 417.771 235.012C410.763 240.676 402.123 243.508 391.851 243.508C383.883 243.508 376.779 241.828 370.539 238.468C364.395 235.108 359.595 230.308 356.139 224.068C352.683 217.828 350.955 210.484 350.955 202.036Z"/>
+                        <path d="M424.024 202.036C424.024 193.684 425.512 186.388 428.488 180.148C431.56 173.908 435.688 169.108 440.872 165.748C446.152 162.388 452.008 160.708 458.44 160.708C464.008 160.708 468.808 161.812 472.84 164.02C476.872 166.228 479.992 169.204 482.2 172.948V161.716H510.424V242.5H482.2V231.268C479.992 235.012 476.824 237.988 472.696 240.196C468.664 242.404 463.912 243.508 458.44 243.508C452.008 243.508 446.152 241.828 440.872 238.468C435.688 235.108 431.56 230.308 428.488 224.068C425.512 217.732 424.024 210.388 424.024 202.036ZM482.2 202.036C482.2 196.852 480.76 192.772 477.88 189.796C475.096 186.82 471.64 185.332 467.512 185.332C463.288 185.332 459.784 186.82 457 189.796C454.216 192.676 452.824 196.756 452.824 202.036C452.824 207.22 454.216 211.348 457 214.42C459.784 217.396 463.288 218.884 467.512 218.884C471.64 218.884 475.096 217.396 477.88 214.42C480.76 211.444 482.2 207.316 482.2 202.036Z"/>
+                        <path d="M617.659 160.996C627.835 160.996 635.803 164.068 641.563 170.212C647.419 176.356 650.347 184.756 650.347 195.412V242.5H622.123V199.156C622.123 194.836 620.923 191.476 618.523 189.076C616.123 186.676 612.859 185.476 608.731 185.476C604.603 185.476 601.339 186.676 598.939 189.076C596.539 191.476 595.339 194.836 595.339 199.156V242.5H567.115V199.156C567.115 194.836 565.915 191.476 563.515 189.076C561.211 186.676 557.995 185.476 553.867 185.476C549.643 185.476 546.331 186.676 543.931 189.076C541.531 191.476 540.331 194.836 540.331 199.156V242.5H512.107V161.716H540.331V172.372C542.827 168.916 546.043 166.18 549.979 164.164C554.011 162.052 558.619 160.996 563.803 160.996C569.755 160.996 575.035 162.292 579.643 164.884C584.347 167.476 588.043 171.124 590.731 175.828C593.611 171.412 597.403 167.86 602.107 165.172C606.811 162.388 611.995 160.996 617.659 160.996Z"/>
+                        <path d="M646.802 202.036C646.802 193.684 648.29 186.388 651.266 180.148C654.338 173.908 658.466 169.108 663.65 165.748C668.93 162.388 674.786 160.708 681.218 160.708C686.786 160.708 691.586 161.812 695.618 164.02C699.65 166.228 702.77 169.204 704.978 172.948V161.716H733.202V242.5H704.978V231.268C702.77 235.012 699.602 237.988 695.474 240.196C691.442 242.404 686.69 243.508 681.218 243.508C674.786 243.508 668.93 241.828 663.65 238.468C658.466 235.108 654.338 230.308 651.266 224.068C648.29 217.732 646.802 210.388 646.802 202.036ZM704.978 202.036C704.978 196.852 703.538 192.772 700.658 189.796C697.874 186.82 694.418 185.332 690.29 185.332C686.066 185.332 682.562 186.82 679.778 189.796C676.994 192.676 675.602 196.756 675.602 202.036C675.602 207.22 676.994 211.348 679.778 214.42C682.562 217.396 686.066 218.884 690.29 218.884C694.418 218.884 697.874 217.396 700.658 214.42C703.538 211.444 704.978 207.316 704.978 202.036Z"/>
+                        <path d="M763.109 175.972C766.277 171.364 770.117 167.716 774.629 165.028C779.141 162.34 783.989 160.996 789.173 160.996V191.092H781.253C775.109 191.092 770.549 192.292 767.573 194.692C764.597 197.092 763.109 201.268 763.109 207.22V242.5H734.885V161.716H763.109V175.972Z"/>
+                        <path d="M780.283 202.036C780.283 193.684 781.771 186.388 784.747 180.148C787.819 173.908 791.947 169.108 797.131 165.748C802.411 162.388 808.267 160.708 814.699 160.708C820.267 160.708 825.067 161.812 829.099 164.02C833.131 166.228 836.251 169.204 838.459 172.948V161.716H866.683V242.5H838.459V231.268C836.251 235.012 833.083 237.988 828.955 240.196C824.923 242.404 820.171 243.508 814.699 243.508C808.267 243.508 802.411 241.828 797.131 238.468C791.947 235.108 787.819 230.308 784.747 224.068C781.771 217.732 780.283 210.388 780.283 202.036ZM838.459 202.036C838.459 196.852 837.019 192.772 834.139 189.796C831.355 186.82 827.899 185.332 823.771 185.332C819.547 185.332 816.043 186.82 813.259 189.796C810.475 192.676 809.083 196.756 809.083 202.036C809.083 207.22 810.475 211.348 813.259 214.42C816.043 217.396 819.547 218.884 823.771 218.884C827.899 218.884 831.355 217.396 834.139 214.42C837.019 211.444 838.459 207.316 838.459 202.036ZM795.115 155.668C797.803 140.02 805.003 132.196 816.715 132.196C818.923 132.196 820.891 132.532 822.619 133.204C824.443 133.876 826.507 134.836 828.811 136.084C830.443 136.948 831.835 137.62 832.987 138.1C834.139 138.58 835.291 138.82 836.443 138.82C839.995 138.82 842.107 136.612 842.779 132.196H857.035C855.691 140.356 853.147 146.308 849.403 150.052C845.755 153.7 841.099 155.524 835.435 155.524C833.323 155.524 831.403 155.236 829.675 154.66C827.947 153.988 825.835 153.028 823.339 151.78C821.707 150.916 820.315 150.244 819.163 149.764C818.011 149.284 816.859 149.044 815.707 149.044C812.251 149.044 810.091 151.252 809.227 155.668H795.115Z"/>
+                        <path d="M905.95 243.508C897.886 243.508 890.638 241.828 884.206 238.468C877.87 235.108 872.878 230.308 869.23 224.068C865.582 217.828 863.758 210.484 863.758 202.036C863.758 193.684 865.582 186.388 869.23 180.148C872.974 173.908 878.014 169.108 884.35 165.748C890.782 162.388 898.03 160.708 906.094 160.708C914.158 160.708 921.358 162.388 927.694 165.748C934.126 169.108 939.166 173.908 942.814 180.148C946.558 186.388 948.43 193.684 948.43 202.036C948.43 210.388 946.558 217.732 942.814 224.068C939.166 230.308 934.126 235.108 927.694 238.468C921.262 241.828 914.014 243.508 905.95 243.508ZM905.95 219.028C909.886 219.028 913.15 217.588 915.742 214.708C918.43 211.732 919.774 207.508 919.774 202.036C919.774 196.564 918.43 192.388 915.742 189.508C913.15 186.628 909.934 185.188 906.094 185.188C902.254 185.188 899.038 186.628 896.446 189.508C893.854 192.388 892.558 196.564 892.558 202.036C892.558 207.604 893.806 211.828 896.302 214.708C898.798 217.588 902.014 219.028 905.95 219.028Z"/>
+                        <path d="M232.5 116.5C232.5 125.889 224.889 133.5 215.5 133.5L204.5 133.5C201.739 133.5 199.5 131.262 199.5 128.5L199.5 84.5002C199.5 81.7388 201.739 79.5002 204.5 79.5002L215.5 79.5002C224.889 79.5002 232.5 87.1114 232.5 96.5002L232.5 116.5Z"/>
+                        <path d="M931.5 202.5C931.5 216.307 920.307 227.5 906.5 227.5C892.693 227.5 881.5 216.307 881.5 202.5C881.5 188.693 892.693 177.5 906.5 177.5C920.307 177.5 931.5 188.693 931.5 202.5Z"/>
+                        <path d="M881.5 202.099C881.5 198.992 882.056 196.279 883.169 193.958C884.318 191.638 885.879 189.852 887.853 188.603C889.827 187.353 892.016 186.728 894.421 186.728C896.359 186.728 898.082 187.139 899.59 187.96C901.133 188.746 902.335 189.835 903.197 191.227V177.517H913.803V217.148H903.197V212.97C902.371 214.363 901.205 215.469 899.697 216.291C898.19 217.112 896.413 217.522 894.367 217.522C891.963 217.522 889.773 216.898 887.799 215.648C885.861 214.398 884.318 212.613 883.169 210.292C882.056 207.936 881.5 205.205 881.5 202.099ZM903.251 202.099C903.251 200.171 902.712 198.653 901.636 197.546C900.595 196.44 899.303 195.886 897.759 195.886C896.18 195.886 894.87 196.44 893.829 197.546C892.788 198.618 892.268 200.135 892.268 202.099C892.268 204.027 892.788 205.562 893.829 206.704C894.87 207.811 896.18 208.365 897.759 208.365C899.303 208.365 900.595 207.811 901.636 206.704C902.712 205.598 903.251 204.062 903.251 202.099Z" fill="#d45252"/>
+                        <path d="M918.362 184.318C916.496 184.318 914.989 183.818 913.84 182.819C912.727 181.783 912.171 180.498 912.171 178.963C912.171 177.392 912.727 176.089 913.84 175.053C914.989 174.018 916.496 173.5 918.362 173.5C920.193 173.5 921.665 174.018 922.777 175.053C923.926 176.089 924.5 177.392 924.5 178.963C924.5 180.498 923.926 181.783 922.777 182.819C921.665 183.818 920.193 184.318 918.362 184.318ZM923.639 220.093C923.639 227.698 919.798 231.5 912.117 231.5H908.295V222.557H910.556C911.453 222.557 912.099 222.378 912.494 222.021C912.889 221.664 913.086 221.075 913.086 220.254V187.103H923.639V220.093Z" fill="#d45252"/>
+                    </svg>
+                </a>
+                <div class="options">
+                    <a href="https://www.spotify.com/br/premium/">Premium</a>
+                    <a href="https://support.spotify.com/br/">Suporte</a>
+                    <a href="https://www.spotify.com/br/download/linux/">Baixar</a>
+                    |
+                    <a href="https://www.spotify.com/br/signup">Inscreva-se</a>
+                    <a href="https://accounts.spotify.com/en/login/?continue=https%3A//open.spotify.com/__noul__%3Fl2l%3D1%26nd%3D1&_locale=pt-BR">Entrar</a>
                 </div>
             </div>
-            <a href="https://www.spotify.com/br/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F">
-            <div class="sign-up-footer">
+            <div class="blue-container">
                 <div>
-                        <p>PREVIEW OF SPOTIFAKE</p>
-                        <small><b>Sign up to get nothing really. This is nothing more than a college assigment 🙂</b></small>
-                    </div>
+                    <h1>Escutar muda tudo</h1>
+                    <p>Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito</p>
                     <button>
-                        <b>SIGN UP FREE</b>
+                        BAIXE O SPOTIFY FREE
                     </button>
                 </div>
-            </a>
+            </div>
+            <div class="footer">
+                <a class="logo" id="footer" href="../">
+                    <img class="logo" id="footer" src="../assets/camaraodj.svg"/>
+                </a>
+                <ul>
+                    <li>
+                        <h4>EMPRESA</h4>
+                        <a>
+                            <p>Sobre</p>
+                        </a>
+                        <a>
+                            <p>Empregos</p>
+                        </a>
+                        <a>
+                            </p>For the Record</p>
+                        </a>
+                    </li>
+                    <li>
+                        <h4>COMUNIDADE</h4>
+                        <a>
+                            <p>Para Artistas</p>
+                        </a>
+                        <a>
+                            <p>Desenvolvedores</p>
+                        </a>
+                        <a>
+                            <p>Publicidade</p>
+                        </a>
+                        <a>
+                            <p>Investidores</p>
+                        </a>
+                        <a>
+                            <p>Fornecedores</p>
+                        </a>
+                    </li>
+                    <li>
+                        <h4>LINKS ÚTEIS</h4>
+                        <a>
+                            <p>Suporte</p>
+                        </a>
+                        <a>
+                            <p>Player da Web</p>
+                        </a>
+                        <a>
+                            <p>Aplicativo móvel grátis</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="socialMedia">
+                    <ul>
+                        <li>
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path fill-rule="nonzero" d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/>
+                                </g>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg width="24px" height="24px" viewBox="0 0 300 300" role="img" xmlns="http://www.w3.org/2000/svg">
+                                <path id="XMLID_827_" d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73
+                                    c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783
+                                    c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598
+                                    C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467
+                                    c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977
+                                    c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889
+                                    c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597
+                                    c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961
+                                    c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895
+                                    c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367
+                                    c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998
+                                    C307.394,57.037,305.009,56.486,302.973,57.388z"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+                                <title>Facebook icon</title>
+                                <path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"/>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Legal Centro de Privacidade Políticas de Privacidade Cookies Sobre anuncios - @C 2022 Spotify AB -->
+            </div>
         </div>
     </body>
 </html>
