@@ -1,133 +1,145 @@
-:root{
-    --main-color: #d45252;
-    --secondary-color: #4A306D;
-    --light-color: #EFD9CE;
-    --dark-color: #080708;
-    --dark-secondary-color: #25283D;
+:root {
+  --main-color: #d45252;
+  --secondary-color: #4a306d;
+  --light-color: #efd9ce;
+  --dark-color: #080708;
+  --dark-secondary-color: #25283d;
 }
 
-body{
-    margin: 0;
-    color: var(--light-color);
-    font-family: 'Poppins', sans-serif;
+body {
+  margin: 0;
+  color: var(--light-color);
+  font-family: "Poppins", sans-serif;
 }
 
 a {
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--light-color)
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--light-color);
 }
 
 ul {
-    margin: 0;
-    padding-left: 0;
-    list-style-type: none
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 8vh;
-    min-height: 80px;
-    background-color: var(--dark-color);
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  min-height: 80px;
+  background-color: var(--dark-color);
 }
 
-.logo{
-    margin: 0% 0%;
-    height: 5rem;   
-    width: auto;
-    fill: var(--light-color);
+.logo {
+  margin: 0% 0%;
+  height: 5rem;
+  width: auto;
+  fill: var(--light-color);
 }
 
-.logo svg{
-    max-height: 5rem;
-    /* width: 100%; */
-    fill: var(--light-color);
+.logo svg {
+  max-height: 5rem;
+  /* width: 100%; */
+  fill: var(--light-color);
 }
 
-.logo path{
-    min-width: max-content;
-    text-align: center;
-    margin: 0 auto;
+.logo path {
+  min-width: max-content;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.navbar .options{
-    display: flex;
-    gap: 2rem;
+.navbar .options {
+  display: flex;
+  gap: 2rem;
 }
 
-.blue-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../assets/doritasso.svg");
-    background-color: var(--main-color);
-    height: 92vh;
-    gap: 2rem;
-    min-height: 240px;
-    padding: 1rem 0rem;
+.blue-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/doritasso.svg");
+  background-color: var(--main-color);
+  height: 92vh;
+  gap: 2rem;
+  min-height: 240px;
+  padding: 1rem 0rem;
 }
 
-.blue-container div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    text-align: center;
-    width: 50%;
+.blue-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+  width: 50%;
 }
 
-.blue-container h1{
-    /* font-weight: normal; */
-    margin: 0;
-    font-size: 9rem;
-    /* color: var(--secondary-color); */
+.blue-container h1 {
+  /* font-weight: normal; */
+  margin: 0;
+  font-size: 9rem;
+  /* color: var(--secondary-color); */
 }
 
-.blue-container button{
-    border-style: none;
-    background-color: var(--secondary-color);
-    color: var(--light-color);
-    font-weight: bold;
-    border-radius: 20rem;
-    width: 225px;
-    height: 50px;
+@media (max-width: 1600px) {
+  .blue-container h1 {
+    font-size: 5rem;
+  }
 }
 
-.footer{
-    display: flex;
-    width: 70%;
-    justify-content: space-around;
-    padding: 4rem 15%;
-    background-color: var(--dark-color);
+@media (max-width: 1280px) {
+  .blue-container h1 {
+    font-size: 3rem;
+  }
 }
 
-.footer h4{
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.5);
+.blue-container button {
+  border-style: none;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  font-weight: bold;
+  border-radius: 20rem;
+  width: 225px;
+  height: 50px;
 }
 
-.footer ul{
-    display: flex;
-    gap: 3rem;
+.footer {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  padding: 4rem 15%;
+  background-color: var(--dark-color);
 }
 
-.logo #footer{
-    height: 4rem;   
-    width: auto;
-}   
-
-.socialMedia{
-    fill: var(--light-color);
+.footer h4 {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.socialMedia svg{
-    padding: 0.75rem;
-    border-radius: 100%;
-    background-color: var(--dark-secondary-color);
+.footer ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.logo #footer {
+  height: 4rem;
+  width: auto;
+}
+
+.socialMedia {
+  fill: var(--light-color);
+}
+
+.socialMedia svg {
+  padding: 0.75rem;
+  border-radius: 100%;
+  background-color: var(--dark-secondary-color);
 }
