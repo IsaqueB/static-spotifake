@@ -151,3 +151,17 @@
   cursor: pointer;
   color: var(--main-color)
 }
+
+@media (max-width: 1600px) {
+  .footer{
+    width: 100%;
+    padding: 4rem 0%;
+    padding-bottom: 2rem;
+  }
+
+  .footer #down{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
