@@ -1,31 +1,3 @@
-:root{
-    --main-color: #d45252;
-    --secondary-color: #4A306D;
-    --light-color: #EFD9CE;
-    --dark-color: #080708;
-    --dark-secondary-color: #25283D;
-}
-
-body{
-    margin: 0;
-}
-
-ul {
-    margin: 0;
-    padding-left: 0;
-    list-style-type: none; 
-}
-
-p, h1, h2, h3, h4{
-    margin: 0;
-}
-
-a {
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--light-color)
-}
-
 .background{
     display: flex;
     flex-direction: column;
